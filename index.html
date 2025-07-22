@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      background: #faf7f2;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 16px 64px 16px;
+    }
+    .restaurant-name {
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+      color: #555;
+    }
+    .menu-photos {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
+    .menu-photo {
+      width: 100%;
+      max-width: 700px;
+      aspect-ratio: 1/1.41;
+      height: auto;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      background: #eee;
+      transition: transform 0.2s;
+      display: block;
+    }
+    .menu-photo:hover {
+      transform: scale(1.01);
+    }
+    @media (max-width: 800px) {
+      .menu-photo { max-width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .restaurant-name { font-size: 2rem; }
+      .container { padding: 16px 4px 32px 4px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="restaurant-name">Your Restaurant Name</div>
+    <div class="contact-info">
+      📞 (123) 456-7890 &nbsp; | &nbsp; ✉️ info@restaurant.com &nbsp; | &nbsp; 📍 123 Main St, City
+    </div>
+    <div class="menu-photos">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Menu Item 1" class="menu-photo">
+      <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80" alt="Menu Item 2" class="menu-photo">
+      <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=600&q=80" alt="Menu Item 3" class="menu-photo">
+      <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80" alt="Menu Item 4" class="menu-photo">
+      <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0723c6a?auto=format&fit=crop&w=600&q=80" alt="Menu Item 5" class="menu-photo">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Menu Item 6" class="menu-photo">
+    </div>
+  </div>
+</body>
+</html> 
